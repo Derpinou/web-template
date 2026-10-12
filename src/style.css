@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+@theme {
+	--color-brand: var(--color-indigo-600);
+}
