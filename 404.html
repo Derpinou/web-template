@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="color-scheme" content="light dark" />
+		<meta name="theme-color" content="#4f46e5" />
+		<meta name="robots" content="noindex" />
+		<title>404 – web-template</title>
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	</head>
+	<body class="flex min-h-dvh flex-col bg-white text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100">
+		<main class="mx-auto flex w-full max-w-2xl flex-1 flex-col items-start justify-center gap-6 px-6 py-16">
+			<p class="text-sm font-medium tracking-widest text-brand uppercase dark:text-indigo-300">Error 404</p>
+			<h1 class="text-4xl font-bold tracking-tight sm:text-5xl">Unknown page</h1>
+			<p class="text-lg text-slate-600 dark:text-slate-400">Unable to found this page.</p>
+			<a
+				href="/"
+				class="rounded-lg bg-brand px-4 py-2 font-medium text-white transition hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+			>
+				Go home
+			</a>
+		</main>
+
+		<footer class="px-6 py-6 text-center text-sm text-slate-500">© <span id="copyright"></span></footer>
+
+		<script type="module" src="/src/main.ts"></script>
+	</body>
+</html>

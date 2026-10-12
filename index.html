@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="color-scheme" content="light dark" />
+		<meta name="theme-color" content="#4f46e5" />
+		<title>web-template</title>
+		<meta name="description" content="A web app starter for static sites using vite, ts, and tailwindcss with deployment on Cf pages or Node.js process." />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="web-template" />
+		<meta property="og:description" content="A web app starter for static sites using vite, ts, and tailwindcss with deployment on Cf pages or Node.js process" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	</head>
+	<body class="flex min-h-dvh flex-col bg-white text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100">
+		<main class="mx-auto flex w-full max-w-2xl flex-1 flex-col justify-center gap-10 px-6 py-16">
+			<header class="space-y-4">
+				<p class="text-sm font-medium tracking-widest text-brand uppercase dark:text-indigo-300">Starter</p>
+				<h1 class="text-4xl font-bold tracking-tight sm:text-5xl">web-template</h1>
+				<p class="text-lg text-slate-600 dark:text-slate-400">
+					A web app starter for static sites using vite, ts, and tailwindcss with deployment on Cf pages or Node.js process.
+				</p>
+			</header>
+
+			<section class="space-y-4" aria-labelledby="fetch-title">
+				<h2 id="fetch-title" class="text-xl font-semibold">Ajaxxxx</h2>
+				<button
+					id="load"
+					type="button"
+					class="cursor-pointer rounded-lg bg-brand px-4 py-2 font-medium text-white transition hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand disabled:cursor-wait disabled:opacity-60"
+				>
+					Call /data/hello.json
+				</button>
+				<pre id="result" aria-live="polite" class="overflow-x-auto rounded-lg bg-slate-100 p-4 text-sm dark:bg-slate-900">There is no data :/</pre>
+			</section>
+		</main>
+
+		<footer class="px-6 py-6 text-center text-sm text-slate-500">© <span id="copyright"></span></footer>
+
+		<script type="module" src="/src/main.ts"></script>
+		<script type="module" src="/src/pages/home.ts"></script>
+	</body>
+</html>

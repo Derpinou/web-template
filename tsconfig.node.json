@@ -1,0 +1,26 @@
+{
+	// Files that run in Node: the Vite config and the production server (run as-is by Node,
+	// which strips the types, hence erasableSyntaxOnly)
+	"compilerOptions": {
+		"target": "ES2023",
+		"module": "NodeNext",
+		"lib": ["ES2023"],
+		"types": ["node"],
+		"skipLibCheck": true,
+
+		"verbatimModuleSyntax": true,
+		"moduleDetection": "force",
+		"noEmit": true,
+
+		/* Strictness */
+		"strict": true,
+		"noUncheckedIndexedAccess": true,
+		"noImplicitOverride": true,
+		"noImplicitReturns": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noFallthroughCasesInSwitch": true,
+		"erasableSyntaxOnly": true
+	},
+	"include": ["vite.config.ts", "server.ts"]
+}
